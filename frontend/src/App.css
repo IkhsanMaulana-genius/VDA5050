@@ -1,0 +1,56 @@
+.App {
+    text-align: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    padding: 2rem;
+    color: white;
+  }
+  
+  .subtitle {
+    color: #61dafb;
+    margin-top: 0.5rem;
+  }
+  
+  .main-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .agv-container {
+    flex: 2;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .info-box {
+    flex: 1;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  button {
+    background-color: #61dafb;
+    color: black;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  button:hover {
+    background-color: #4fa8d3;
+  }

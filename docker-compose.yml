@@ -1,22 +1,22 @@
-version: '3.8'
-
 services:
-  mqtt:
+  mosquitto:
     image: eclipse-mosquitto
     ports:
       - "1883:1883"
       - "9001:9001"
     volumes:
-      - ./mosquitto/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto:/mosquitto/config
 
-  agv_simulator:
-    build: ./agv_simulator
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
     depends_on:
-      - mqtt
+      - mosquitto
 
   frontend:
     build: ./frontend
     ports:
       - "3000:3000"
     depends_on:
-      - mqtt
+      - backend
