@@ -1,8 +1,8 @@
 import React from 'react';
-import AGVInterface from './AGVInterface';
 import './App.css';
+import AGVInterface from './AGVInterface';
 
-const App: React.FC = () => {
+function App() {
   return (
     <div className="App">
       <header className="App-header">
@@ -27,6 +27,6 @@ const App: React.FC = () => {
       </main>
     </div>
   );
-};
+}
 
 export default App;
